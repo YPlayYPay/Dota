@@ -21,9 +21,14 @@ ul li{
 img{
     vertical-align: middle;
     border: 0;
+    cursor: pointer;
 }
 
-img:hover{
+.btn, a{
+    cursor: pointer;
+}
+
+.container img:hover{
     transform-origin: center center;
     transform: scale(1.5,1.5);
     -webkit-transform-origin: center center;
@@ -235,6 +240,7 @@ body {
     padding: 5px;
     margin-right: 20px;
     margin-top: 20px;
+    background: url("https://www.c5game.com/images/thbg.png") no-repeat
 }
 
 .list-item5 li p {
@@ -296,6 +302,11 @@ body {
     padding: 3px;
     margin-right: 20px;
     margin-top: 20px;
+}
+
+.list-item4 li a{
+    display: block;
+    overflow: hidden;
 }
 
 .floor2-left {
@@ -427,4 +438,478 @@ body {
 
 .text-exalted {
     color: #d1d1d1;
+}
+
+.list-item5 li .img {
+    width: 186px;
+    height: 127px;
+    display: block;
+    overflow: hidden;
+}
+
+.list-item6 li {
+    width: 165px;
+    height: 170px;
+    padding: 4px;
+    margin: 20px 18px 0 0;
+
+}
+
+.list-item6 li .img {
+    width: 154px;
+    height: 104px;
+    position: relative;
+
+}
+
+.csgo-img-bg {
+    background: url("https://static.c5game.com/images/item-bg.jpg") center 0 no-repeat;
+    background-size: 104%;
+    overflow: hidden;
+    display: block;
+}
+
+#footer {
+    position: relative;
+    min-width: 1120px;
+    border-top: 1px solid #51432c;
+    margin-top: 20px;
+}
+
+#help-btn {
+    position: fixed;
+    top: 200px;
+    right: 5px;
+}
+
+.right-2 {
+    position: relative;
+    right: 2px;
+}
+
+.ft-18 {
+    font-size: 18px;
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 12px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.banner-nologin {
+    width: 100%;
+    background: rgba(43, 52, 79, 0.9);
+    height: 80px;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+}
+
+.banner-bottom {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.banner-bottom img, .banner-logined img {
+    margin-top: -52px;
+    float: left;
+}
+
+.login-form {
+    float: left;
+    width: 168px;
+    height: 80px;
+    text-align: center;
+    padding: 10px 34px;
+}
+
+.login-form > .login.btn-yellow {
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #e4b35a;
+    border: 1px solid #fee2b0;
+}
+
+.login-form > .reg.btn-blue {
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #424e65;
+    border: 1px solid #696f87;
+}
+
+.mt-10 {
+    margin-top: 10px !important;
+}
+
+.btn-yellow {
+    color: #fff;
+    padding: 0 20px;
+    line-height: 28px;
+    height: 30px;
+    background: #ff9400;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+.btn-blue {
+    color: #fff;
+    padding: 0 20px;
+    line-height: 28px;
+    height: 30px;
+    background: #4d567f;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+
+.footer-hd {
+    background: #141821;
+    padding-bottom: 20px;
+}
+
+.footer-links {
+    width: 1120px;
+    padding: 13px 0 17px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-bottom: 1px solid #202431;
+}
+
+.footer-links li {
+    height: 130px;
+    border-right: 1px solid #202431;
+    float: left;
+    width: 255px;
+    margin-right: 25px;
+}
+
+.footer-links li .title {
+    font-size: 18px;
+    color: #e4b35a;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+    padding-left: 40px;
+    background: url("https://static.c5game.com/images/icons.png") no-repeat;
+}
+
+.footer-links li .title1 {
+    background-position: 0 -176px;
+}
+
+
+.footer-links li .title2 {
+    background-position: -303px -176px;
+}
+
+.footer-links li .title3 {
+    background: url("https://static.c5game.com/images/payment-icons/payment.png") no-repeat;
+}
+
+.footer-links li.last {
+    border-right: 0;
+}
+
+.footer-links li .title4 {
+    background-position: -865px -176px;
+}
+
+.footer-links li .links {
+    padding-left: 40px;
+}
+
+.footer-links li .links a {
+    margin-right: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.friend-links {
+    color: #4e4f53;
+    overflow: hidden;
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.friend-links .friend-links-content {
+    float: left;
+    margin-left: 20px;
+}
+
+.footer-bd {
+    padding: 15px 0;
+    background-color: #111318;
+    overflow: hidden;
+}
+
+.footer-bd-content {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.footer-bd-content-left {
+    background: url("https://static.c5game.com/images/icons.png") no-repeat;
+    background-position: 0 -121px;
+    width: 388px;
+    height: 47px;
+    float: left;
+    opacity: 0.3;
+}
+
+.copyright {
+    float: left;
+    margin-left: 20px;
+    color: #4e4f53;
+}
+
+.copyright .company {
+    color: #9f9f9f;
+    font-size: 18px;
+}
+
+.copyright p {
+    margin: 2px 0;
+}
+
+#affix-nav {
+    position: fixed;
+    left: 50%;
+    bottom: 130px;
+    margin-left: 590px;
+}
+
+#alipay{
+    width: 40px;
+    height: 25px;
+    background: url("https://static.c5game.com/images/payment-icons/alipay2.png") no-repeat;
+}
+
+#wechat{
+    width: 40px;
+    height: 25px;
+    background: url("https://static.c5game.com/images/payment-icons/wechat2.png") no-repeat;
+}
+
+#visa{
+    width: 50px;
+    height: 25px;
+    background: url("https://static.c5game.com/images/payment-icons/visa2.png") no-repeat;
+}
+
+#paypal{
+    width: 40px;
+    height: 25px;
+    background: url("https://static.c5game.com/images/payment-icons/paypal2.png") no-repeat;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.friend-links-content a {
+    color: #4e4f53;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 25px;
+}
+
+.friend-links-content a:nth-child(1) {
+    padding-left: 20px;
+    background: url("https://static.c5game.com/images/dota2iconperfect.png")0 no-repeat;
+    background-size: 16px 16px;
+}
+
+.friend-links-content a:nth-child(2) {
+    padding-left: 20px;
+    background: url("https://static.c5game.com/images/friend-links/csgo.ico")0 no-repeat;
+    background-size: 16px 16px;
+}
+
+.friend-links-content a:nth-child(3) {
+    padding-left: 20px;
+    background: url("https://static.c5game.com/images/friend-links/alipay.ico")0 no-repeat;
+    background-size: 16px 16px;
+}
+
+.friend-links-content a:nth-child(4) {
+    padding-left: 20px;
+    background: url("https://static.c5game.com/images/friend-links/steam.ico")0 no-repeat;
+    background-size: 16px 16px;
+}
+
+.wrapper-slider{
+    width: 830px;
+    height: 300px;
+    float: left;
+}
+
+.my-slider{
+    width: 830px;
+    height: 300px;
+}
+
+.demo {
+    padding: 30px 0;
+}
+
+.demo > div {
+    position: relative;
+    padding: 40px;
+    margin-bottom: 50px;
+    background: #fff;
+    color: #666;
+    text-align: center;
+    text-shadow: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+}
+
+.unslider {
+    overflow: visible;
+}
+
+.unslider {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+
+#setup .unslider-arrow, #demos .unslider-arrow {
+    display: block;
+    width: 32px;
+    height: 32px;
+    top: 50%;
+    right: -50px;
+    left: auto;
+    margin-top: -16px;
+    overflow: hidden;
+    background: rgba(0,0,0,.2) no-repeat 50% 50%;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAQAAABuQZ3IAAAAi0lEQ…ke1P1ArgXwouVvdQq86ww/GQefusNf7kBviBlxpT8k+gL/Wox4r1d4MwAAAABJRU5ErkJggg==);
+    background-size: 7px 11px;
+    border-radius: 32px;
+    text-indent: -999em;
+    opacity: .6;
+    transition: opacity .2s;
+}
+
+.unslider-arrow.next{
+    left: auto;
+    right: 20px;
+}
+
+.unslider-arrow{
+    position: absolute;
+    left: 20px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.demo > div{
+    position: relative;
+    padding: 40px;
+    margin-bottom: 50px;
+    background: #fff;
+    color: #666;
+    text-align: center;
+    text-shadow: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+}
+
+.unslider-arrow.prev {
+    left: -50px;
+    right: auto;
+    transform: rotate(-180deg);
+}
+
+
+.unslider-nav,.unslider-nav{
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+    top: auto;
+    margin: 0;
+}
+
+.unslider-nav{
+    right:auto;
+    z-index: 3;
+    margin-left: 40px;
+}
+
+nav, .unslider-nav{
+    position: absolute;
+    top:50px;
+    left: 60px;
+    right: 60px;
+    z-index: 2;
+}
+
+.unslider-nav li{
+    display: inline-block;
+    float: none;
+    width:6px;
+    height:6px;
+    margin:0 4px;
+    padding: 3px;
+    background: transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    cursor: pointer;
+    opacity: .4;
+}
+
+.unslider-nav li {
+    font-size: 14px;
+}
+
+.unslider-nav .active{
+    background: #fff;
+    cursor: default;
+    opacity: 1;
+}
+
+.wrapper-slider{
+    position: relative;
+    height: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }

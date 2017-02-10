@@ -35,8 +35,8 @@
                 #haloword-pron { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -94px -34px; }#haloword-pron:hover { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -111px -34px; }#haloword-open { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -94px -17px; }#haloword-open:hover { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -111px -17px; }#haloword-close { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -94px 0; }#haloword-close:hover { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -111px 0; }#haloword-add { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -94px -51px; }#haloword-add:hover { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -111px -51px; }#haloword-remove { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -94px -68px; }#haloword-remove:hover { background: url(chrome-extension://bhkcehpnnlgncpnefpanachijmhikocj/img/icon.svg) -111px -68px; }
             </style>
         <link rel="Shortcut Icon" href="/images/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/swiper-3.4.1.min.css">
         <link rel="stylesheet" href="./css/index.css">
-        <link rel="stylesheet" href="./css/swiper-3.4.1.min.css">
 </head>
     
 <body>
@@ -98,8 +98,25 @@
     <div class="container">
         <div class="content">
             <div class="banner-user">
-                <div class="swiper">
-
+                <div class="wrapper-slider">
+                    <div class="swiper-container swiper-container-horizontal">
+                        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                            <div class="swiper-slide" style="width: 1472px; margin-right: 30px;">Slide 1</div>
+                            <div class="swiper-slide swiper-slide-prev" style="width: 1472px; margin-right: 30px;">Slide 2</div>
+                            <div class="swiper-slide swiper-slide-active" style="width: 1472px; margin-right: 30px;">Slide 3</div>
+                            <div class="swiper-slide swiper-slide-next" style="width: 1472px; margin-right: 30px;">Slide 4</div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                 </div>
                 <div class="user">
                     <a href="https://www.c5game.com/user/login/ajax.html" class="ajax-login">登陆</a>
@@ -966,11 +983,783 @@
             </div>
             <a href="/activity/rich.html" class="more-link">更多<span class="glyphicon glyphicon-option-vertical"></span></a>
         </div>
+        <div class="floor floor3">
+
+            <ul class="floor-nav" role="tablist">
+                <li role="presentation" class="active"><a href="#rise-product" role="tab" data-toggle="tab">土豪专区</a></li>
+                <li role="presentation"><a href="#rise-csgo-product" role="tab" data-toggle="tab">CS:GO</a></li>
+                <li role="presentation"><a href="#rise-dota-product" role="tab" data-toggle="tab">DOTA2</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" data-tpl="rise-product-tpl" id="rise-product" data-url="/api/product/rise.html?type=all">
+                    <ul class="clearfix list-item5">
+                    <li>
+                        <a href="/dota/9012/S.html" class="qualitly-unusual  img">
+                            <img src="https://i.c5game.com/economy/570/2016/07/17/a988b2be362f2a2daf1e6f561bdf5f7f.png@250w_166h_1e_1c" width="188" height="125" alt="独特 翠花">
+                        </a>
+
+                        <p class="name">
+                            <a href="/dota/9012/S.html">独特 翠花</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥35000</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/252920608/S.html" class="qualitly-unique  img">
+                            <img src="https://i.c5game.com/economy/570/2016/11/28/60663bc3e526490a2fac68b9e6ebf87d.png@250w_166h_1e_1c" width="188" height="125" alt="棱彩：传说 （222,，228，131）">
+                        </a>
+
+                        <p class="name">
+                            <a href="/dota/252920608/S.html">棱彩：传说 （222,，228，131）</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥9999</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/19206/S.html" class="qualitly-corrupted  img">
+                            <img src="https://i.c5game.com/economy/570/76461742ad3c7fea52fdc3946b41ab9c.png@250w_166h_1e_1c" width="188" height="125" alt="冥灵 凶灾劫">
+                        </a>
+
+                        <p class="name">
+                            <a href="/dota/19206/S.html">冥灵 凶灾劫</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥8999</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/12067/S.html" class="qualitly-unusual  img">
+                            <img src="https://i.c5game.com/economy/570/2016/07/17/4a64720dccf069221250b82aec7ec6d9.png@250w_166h_1e_1c" width="188" height="125" alt="独特 黄金Roshan宝宝">
+                        </a>
+
+                        <p class="name">
+                            <a href="/dota/12067/S.html">独特 黄金Roshan宝宝</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥7400</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/327821389/S.html" class="qualitly-unique  img">
+                            <img src="https://i.c5game.com/economy/570/2016/12/22/60663bc3e526490a2fac68b9e6ebf87d.png@250w_166h_1e_1c" width="188" height="125" alt="棱彩：传说 （173,，247，143）">
+                        </a>
+
+                        <p class="name">
+                            <a href="/dota/327821389/S.html">棱彩：传说 （173,，247，143）</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥6999</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/csgo/515014916/S.html" class="qualitly-unusual csgo-img-bg img">
+                            <img src="https://i.c5game.com/economy/730/2017/01/31/cc771080749453b94da790cdd3da4f48.png@250w_166h_1e_1c.png" width="188" height="125" alt="爪子刀（★ StatTrak™） | 自由之手 (崭新出厂)">
+                        </a>
+
+                        <p class="name">
+                            <a href="/csgo/515014916/S.html">爪子刀（★ StatTrak™） | 自由之手 (崭新出厂)</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥2820</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/csgo/24695/S.html" class="qualitly-unique csgo-img-bg img">
+                            <img src="https://i.c5game.com/economy/730/2016/07/16/a8dc26ef4b8a0251cbd7586fa4c938ba.png@250w_166h_1e_1c.png" width="188" height="125" alt="M4A1 消音版 | 骑士 (崭新出厂)">
+                        </a>
+
+                        <p class="name">
+                            <a href="/csgo/24695/S.html">M4A1 消音版 | 骑士 (崭新出厂)</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥2800</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/csgo/26250/S.html" class="qualitly-unusual csgo-img-bg img">
+                            <img src="https://i.c5game.com/economy/730/2016/07/16/f6bf38e470a4353d7b91478006f76e18.png@250w_166h_1e_1c.png" width="188" height="125" alt="爪子刀（★） | 渐变大理石 (崭新出厂)">
+                        </a>
+
+                        <p class="name">
+                            <a href="/csgo/26250/S.html">爪子刀（★） | 渐变大理石 (崭新出厂)</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥2550</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/csgo/27008/S.html" class="qualitly-unusual csgo-img-bg img">
+                            <img src="https://i.c5game.com/economy/730/27daafed33b287296e4dd143fdd1d9fe.png@250w_166h_1e_1c.png" width="188" height="125" alt="蝴蝶刀（★ StatTrak™） | 渐变之色 (崭新出厂)">
+                        </a>
+
+                        <p class="name">
+                            <a href="/csgo/27008/S.html">蝴蝶刀（★ StatTrak™） | 渐变之色 (崭新出厂)</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥2537.91</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/csgo/494007749/S.html" class="qualitly-unusual csgo-img-bg img">
+                            <img src="https://i.c5game.com/economy/730/2017/01/20/3bff6fcd4d68fd92091bf403ffe94ab1.png@250w_166h_1e_1c.png" width="188" height="125" alt="爪子刀（★ StatTrak™） | 黑色层压板 (久经沙场)">
+                        </a>
+
+                        <p class="name">
+                            <a href="/csgo/494007749/S.html">爪子刀（★ StatTrak™） | 黑色层压板 (久经沙场)</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥2500</span></span>
+                        </p>
+                    </li>
+
+                </ul></div>
+                <script id="rise-product-tpl" type="text/html">
+                    <ul class="clearfix list-item5">
+                        {{each body as data i}}
+                        <li>
+                            <a href="{{data.url}}" class="qualitly-{{data.quality}} {{data.appid == 730 ? 'csgo-img-bg' : ''}} img">
+                                <img src="{{data.image_url}}" width="188" height="125" alt="{{data.name}}" />
+                            </a>
+
+                            <p class="name">
+                                <a href="{{data.url}}">{{data.name}}</a>
+                            </p>
+
+                            <p class="info">
+                                <span class="pull-left">售价: <span class="price">{{data.currency}}{{data.price}}</span></span>
+                            </p>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </script>
+                <div role="tabpanel" class="tab-pane" data-tpl="rise-product-tpl" id="rise-csgo-product" data-url="/api/product/rise.html?type=csgo"><ul class="clearfix list-item5">
+
+                    <li>
+                        <a href="/csgo/515014916/S.html" class="qualitly-unusual csgo-img-bg img">
+                            <img src="https://i.c5game.com/economy/730/2017/01/31/cc771080749453b94da790cdd3da4f48.png@250w_166h_1e_1c.png" width="188" height="125" alt="爪子刀（★ StatTrak™） | 自由之手 (崭新出厂)">
+                        </a>
+
+                        <p class="name">
+                            <a href="/csgo/515014916/S.html">爪子刀（★ StatTrak™） | 自由之手 (崭新出厂)</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥2820</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/csgo/24695/S.html" class="qualitly-unique csgo-img-bg img">
+                            <img src="https://i.c5game.com/economy/730/2016/07/16/a8dc26ef4b8a0251cbd7586fa4c938ba.png@250w_166h_1e_1c.png" width="188" height="125" alt="M4A1 消音版 | 骑士 (崭新出厂)">
+                        </a>
+
+                        <p class="name">
+                            <a href="/csgo/24695/S.html">M4A1 消音版 | 骑士 (崭新出厂)</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥2800</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/csgo/26250/S.html" class="qualitly-unusual csgo-img-bg img">
+                            <img src="https://i.c5game.com/economy/730/2016/07/16/f6bf38e470a4353d7b91478006f76e18.png@250w_166h_1e_1c.png" width="188" height="125" alt="爪子刀（★） | 渐变大理石 (崭新出厂)">
+                        </a>
+
+                        <p class="name">
+                            <a href="/csgo/26250/S.html">爪子刀（★） | 渐变大理石 (崭新出厂)</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥2550</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/csgo/27008/S.html" class="qualitly-unusual csgo-img-bg img">
+                            <img src="https://i.c5game.com/economy/730/27daafed33b287296e4dd143fdd1d9fe.png@250w_166h_1e_1c.png" width="188" height="125" alt="蝴蝶刀（★ StatTrak™） | 渐变之色 (崭新出厂)">
+                        </a>
+
+                        <p class="name">
+                            <a href="/csgo/27008/S.html">蝴蝶刀（★ StatTrak™） | 渐变之色 (崭新出厂)</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥2537.91</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/csgo/494007749/S.html" class="qualitly-unusual csgo-img-bg img">
+                            <img src="https://i.c5game.com/economy/730/2017/01/20/3bff6fcd4d68fd92091bf403ffe94ab1.png@250w_166h_1e_1c.png" width="188" height="125" alt="爪子刀（★ StatTrak™） | 黑色层压板 (久经沙场)">
+                        </a>
+
+                        <p class="name">
+                            <a href="/csgo/494007749/S.html">爪子刀（★ StatTrak™） | 黑色层压板 (久经沙场)</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥2500</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/csgo/25615/S.html" class="qualitly-unique csgo-img-bg img">
+                            <img src="https://i.c5game.com/economy/730/2016/07/16/51257b29503caecafdc7e86ba41c2980.png@250w_166h_1e_1c.png" width="188" height="125" alt="AK-47 | 火蛇 (略有磨损)">
+                        </a>
+
+                        <p class="name">
+                            <a href="/csgo/25615/S.html">AK-47 | 火蛇 (略有磨损)</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥1950</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/csgo/22702/S.html" class="qualitly-unusual csgo-img-bg img">
+                            <img src="https://i.c5game.com/economy/730/2016/07/16/f7918ce2288f0e9e2509313197f74095.png@250w_166h_1e_1c.png" width="188" height="125" alt="爪子刀（★） | 多普勒 (崭新出厂)">
+                        </a>
+
+                        <p class="name">
+                            <a href="/csgo/22702/S.html">爪子刀（★） | 多普勒 (崭新出厂)</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥1930</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/csgo/26307/S.html" class="qualitly-unusual csgo-img-bg img">
+                            <img src="https://i.c5game.com/economy/730/2016/07/16/d4cd1d78737a5f91b5fc0d4f14b726fd.png@250w_166h_1e_1c.png" width="188" height="125" alt="刺刀（★ StatTrak™） | 多普勒 (崭新出厂)">
+                        </a>
+
+                        <p class="name">
+                            <a href="/csgo/26307/S.html">刺刀（★ StatTrak™） | 多普勒 (崭新出厂)</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥1888.88</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/csgo/24748/S.html" class="qualitly-unusual csgo-img-bg img">
+                            <img src="https://i.c5game.com/economy/730/2016/07/16/0002ef59488d930461075dbdac637ffe.png@250w_166h_1e_1c.png" width="188" height="125" alt="刺刀（★） | 渐变大理石 (崭新出厂)">
+                        </a>
+
+                        <p class="name">
+                            <a href="/csgo/24748/S.html">刺刀（★） | 渐变大理石 (崭新出厂)</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥1799</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/csgo/26816/S.html" class="qualitly-unusual csgo-img-bg img">
+                            <img src="https://i.c5game.com/economy/730/2016/07/16/425869bd9e348a27fa3c9cc92a1b6bee.png@250w_166h_1e_1c.png" width="188" height="125" alt="折叠刀（★ StatTrak™） | 渐变大理石 (崭新出厂)">
+                        </a>
+
+                        <p class="name">
+                            <a href="/csgo/26816/S.html">折叠刀（★ StatTrak™） | 渐变大理石 (崭新出厂)</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥1619.68</span></span>
+                        </p>
+                    </li>
+
+                </ul></div>
+
+                <div role="tabpanel" class="tab-pane" data-tpl="rise-product-tpl" id="rise-dota-product" data-url="/api/product/rise.html?type=dota"><ul class="clearfix list-item5">
+
+                    <li>
+                        <a href="/dota/9012/S.html" class="qualitly-unusual  img">
+                            <img src="https://i.c5game.com/economy/570/2016/07/17/a988b2be362f2a2daf1e6f561bdf5f7f.png@250w_166h_1e_1c" width="188" height="125" alt="独特 翠花">
+                        </a>
+
+                        <p class="name">
+                            <a href="/dota/9012/S.html">独特 翠花</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥35000</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/252920608/S.html" class="qualitly-unique  img">
+                            <img src="https://i.c5game.com/economy/570/2016/11/28/60663bc3e526490a2fac68b9e6ebf87d.png@250w_166h_1e_1c" width="188" height="125" alt="棱彩：传说 （222,，228，131）">
+                        </a>
+
+                        <p class="name">
+                            <a href="/dota/252920608/S.html">棱彩：传说 （222,，228，131）</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥9999</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/19206/S.html" class="qualitly-corrupted  img">
+                            <img src="https://i.c5game.com/economy/570/76461742ad3c7fea52fdc3946b41ab9c.png@250w_166h_1e_1c" width="188" height="125" alt="冥灵 凶灾劫">
+                        </a>
+
+                        <p class="name">
+                            <a href="/dota/19206/S.html">冥灵 凶灾劫</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥8999</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/12067/S.html" class="qualitly-unusual  img">
+                            <img src="https://i.c5game.com/economy/570/2016/07/17/4a64720dccf069221250b82aec7ec6d9.png@250w_166h_1e_1c" width="188" height="125" alt="独特 黄金Roshan宝宝">
+                        </a>
+
+                        <p class="name">
+                            <a href="/dota/12067/S.html">独特 黄金Roshan宝宝</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥7400</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/327821389/S.html" class="qualitly-unique  img">
+                            <img src="https://i.c5game.com/economy/570/2016/12/22/60663bc3e526490a2fac68b9e6ebf87d.png@250w_166h_1e_1c" width="188" height="125" alt="棱彩：传说 （173,，247，143）">
+                        </a>
+
+                        <p class="name">
+                            <a href="/dota/327821389/S.html">棱彩：传说 （173,，247，143）</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥6999</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/50731550/S.html" class="qualitly-unique  img">
+                            <img src="https://i.c5game.com/economy/570/2016/08/31/ed39d8b9a01b3da71db7877d0488abb6.png@250w_166h_1e_1c" width="188" height="125" alt="纯金禽学法师斗篷">
+                        </a>
+
+                        <p class="name">
+                            <a href="/dota/50731550/S.html">纯金禽学法师斗篷</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥6500</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/7900/S.html" class="qualitly-unusual  img">
+                            <img src="https://i.c5game.com/economy/570/2016/07/17/f70fe12b9c4e5eb5447270404d052cca.png@250w_166h_1e_1c" width="188" height="125" alt="独特 铂金Roshan宝宝">
+                        </a>
+
+                        <p class="name">
+                            <a href="/dota/7900/S.html">独特 铂金Roshan宝宝</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥5780</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/10148/S.html" class="qualitly-genuine  img">
+                            <img src="https://i.c5game.com/economy/570/2016/07/17/da495cca61ce5042b0027807d29f8e53.png@250w_166h_1e_1c" width="188" height="125" alt="纯正 霸王蝶">
+                        </a>
+
+                        <p class="name">
+                            <a href="/dota/10148/S.html">纯正 霸王蝶</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥5455.9</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/9325/S.html" class="qualitly-genuine  img">
+                            <img src="https://i.c5game.com/economy/570/2016/07/17/d230a3f6edcd7da17dc6bec018cc951b.png@250w_166h_1e_1c" width="188" height="125" alt="纯正 炽焰战斧">
+                        </a>
+
+                        <p class="name">
+                            <a href="/dota/9325/S.html">纯正 炽焰战斧</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥5250</span></span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/389506/S.html" class="qualitly-favored  img">
+                            <img src="https://i.c5game.com/economy/570/911e2b4429a32282a169a0ed0a1fe0fa.png@250w_166h_1e_1c" width="188" height="125" alt="青睐 萌蛛">
+                        </a>
+
+                        <p class="name">
+                            <a href="/dota/389506/S.html">青睐 萌蛛</a>
+                        </p>
+
+                        <p class="info">
+                            <span class="pull-left">售价: <span class="price">￥5000</span></span>
+                        </p>
+                    </li>
+
+                </ul></div>
+            </div>
+            <a href="/dota.html?sort=price.desc" class="more-link">更多 <span class="glyphicon glyphicon-option-vertical"></span></a>
+        </div>
+        <div class="floor floor5">
+
+            <ul class="floor-nav">
+                <li class="active"><a href="#">成交记录</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" id="deal-history" data-tpl="deal-history-tpl" class="tab-pane active" data-url="/api/product/deal.html"><ul class="clearfix list-item6">
+
+                    <li>
+                        <a href="/dota/21284/S.html" class="img csgo-img-bg">
+                            <img src="https://i.c5game.com/economy/570/2016/07/17/873904b87bb42d4f7e36098069982fec.png@200w_135h_1e_1c" width="154" height="104" alt="螺旋长棘双角">
+
+                            <span class="rarity-box rarity-mythical">神话</span>
+
+                        </a>
+                        <p class="name">
+                            <span class="pull-left name-ellipsis">0.0</span>
+                            <span class="num">刚刚</span>
+                        </p>
+                        <p class="info">
+                            购买了 <span class="text-corrupted">螺旋长棘双角</span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/1928/P.html" class="img csgo-img-bg">
+                            <img src="https://i.c5game.com/economy/570/2016/07/16/d705df2eb2c82e729838d7fe40fa9dd0.png@200w_135h_1e_1c" width="154" height="104" alt="魔导师炽魂">
+
+                            <span class="rarity-box rarity-arcana">至宝</span>
+
+                        </a>
+                        <p class="name">
+                            <span class="pull-left name-ellipsis">蓝天白云</span>
+                            <span class="num">刚刚</span>
+                        </p>
+                        <p class="info">
+                            购买了 <span class="text-corrupted">魔导师炽魂</span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/1898/P.html" class="img csgo-img-bg">
+                            <img src="https://i.c5game.com/economy/570/2016/07/16/19a14ad82d99238be405496757f757e9.png@200w_135h_1e_1c" width="154" height="104" alt="麒麟">
+
+                            <span class="rarity-box rarity-legendary">传说</span>
+
+                        </a>
+                        <p class="name">
+                            <span class="pull-left name-ellipsis">猴子请来的逗比666</span>
+                            <span class="num">刚刚</span>
+                        </p>
+                        <p class="info">
+                            购买了 <span class="text-corrupted">麒麟</span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/20299/P.html" class="img csgo-img-bg">
+                            <img src="https://i.c5game.com/economy/570/2016/07/17/b5dfd2aa354253edf8ca441056859516.png@200w_135h_1e_1c" width="154" height="104" alt="铭刻 真霹实雳">
+
+                            <span class="rarity-box rarity-immortal">不朽</span>
+
+                        </a>
+                        <p class="name">
+                            <span class="pull-left name-ellipsis">♥.对线农药（Fang）收货</span>
+                            <span class="num">刚刚</span>
+                        </p>
+                        <p class="info">
+                            购买了 <span class="text-corrupted">铭刻 真霹实雳</span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/1859/S.html" class="img csgo-img-bg">
+                            <img src="https://i.c5game.com/economy/570/2016/07/16/414668af081ffb57190af149aa1a4eb9.png@200w_135h_1e_1c" width="154" height="104" alt="龙炎合金双刀">
+
+                            <span class="rarity-box rarity-rare">稀有</span>
+
+                        </a>
+                        <p class="name">
+                            <span class="pull-left name-ellipsis">colo_n</span>
+                            <span class="num">刚刚</span>
+                        </p>
+                        <p class="info">
+                            购买了 <span class="text-corrupted">龙炎合金双刀</span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/1928/P.html" class="img csgo-img-bg">
+                            <img src="https://i.c5game.com/economy/570/2016/07/16/d705df2eb2c82e729838d7fe40fa9dd0.png@200w_135h_1e_1c" width="154" height="104" alt="魔导师炽魂">
+
+                            <span class="rarity-box rarity-arcana">至宝</span>
+
+                        </a>
+                        <p class="name">
+                            <span class="pull-left name-ellipsis">♥.对线农药（Fang）收货</span>
+                            <span class="num">刚刚</span>
+                        </p>
+                        <p class="info">
+                            购买了 <span class="text-corrupted">魔导师炽魂</span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/20295/S.html" class="img csgo-img-bg">
+                            <img src="https://i.c5game.com/economy/570/2016/07/17/9791da23c53ecc3b61d605c77a0d8174.png@200w_135h_1e_1c" width="154" height="104" alt="铭刻 荒地之冠">
+
+                            <span class="rarity-box rarity-immortal">不朽</span>
+
+                        </a>
+                        <p class="name">
+                            <span class="pull-left name-ellipsis">Blinkiss</span>
+                            <span class="num">刚刚</span>
+                        </p>
+                        <p class="info">
+                            购买了 <span class="text-corrupted">铭刻 荒地之冠</span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/518768062/S.html" class="img csgo-img-bg">
+                            <img src="https://i.c5game.com/economy/570/2017/02/03/59afef2dae4eb098c7efc34c4a31afaa.png@200w_135h_1e_1c" width="154" height="104" alt="赤色红炉">
+
+                            <span class="rarity-box rarity-mythical">神话</span>
+
+                        </a>
+                        <p class="name">
+                            <span class="pull-left name-ellipsis">时尚！（天降正义）</span>
+                            <span class="num">刚刚</span>
+                        </p>
+                        <p class="info">
+                            购买了 <span class="text-corrupted">赤色红炉</span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/17991/P.html" class="img csgo-img-bg">
+                            <img src="https://i.c5game.com/economy/570/2016/07/17/eb7c8cc791dd3ca71ae7c73d48099d0a.png@200w_135h_1e_1c" width="154" height="104" alt="纯正 血羽魔翼">
+
+                            <span class="rarity-box rarity-immortal">不朽</span>
+
+                        </a>
+                        <p class="name">
+                            <span class="pull-left name-ellipsis">微微一笑很倾城</span>
+                            <span class="num">刚刚</span>
+                        </p>
+                        <p class="info">
+                            购买了 <span class="text-corrupted">纯正 血羽魔翼</span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/17991/S.html" class="img csgo-img-bg">
+                            <img src="https://i.c5game.com/economy/570/2016/07/17/eb7c8cc791dd3ca71ae7c73d48099d0a.png@200w_135h_1e_1c" width="154" height="104" alt="纯正 血羽魔翼">
+
+                            <span class="rarity-box rarity-immortal">不朽</span>
+
+                        </a>
+                        <p class="name">
+                            <span class="pull-left name-ellipsis">斯卡迪公约</span>
+                            <span class="num">刚刚</span>
+                        </p>
+                        <p class="info">
+                            购买了 <span class="text-corrupted">纯正 血羽魔翼</span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/21361/P.html" class="img csgo-img-bg">
+                            <img src="https://i.c5game.com/economy/570/2016/07/17/e6dc45b53dd1ee5cb700e56db0cf25fa.png@200w_135h_1e_1c" width="154" height="104" alt="融合 渄淬之刃">
+
+                            <span class="rarity-box rarity-mythical">神话</span>
+
+                        </a>
+                        <p class="name">
+                            <span class="pull-left name-ellipsis">chukucun.com</span>
+                            <span class="num">刚刚</span>
+                        </p>
+                        <p class="info">
+                            购买了 <span class="text-corrupted">融合 渄淬之刃</span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="/dota/21361/S.html" class="img csgo-img-bg">
+                            <img src="https://i.c5game.com/economy/570/2016/07/17/e6dc45b53dd1ee5cb700e56db0cf25fa.png@200w_135h_1e_1c" width="154" height="104" alt="融合 渄淬之刃">
+
+                            <span class="rarity-box rarity-mythical">神话</span>
+
+                        </a>
+                        <p class="name">
+                            <span class="pull-left name-ellipsis">斯卡迪公约</span>
+                            <span class="num">刚刚</span>
+                        </p>
+                        <p class="info">
+                            购买了 <span class="text-corrupted">融合 渄淬之刃</span>
+                        </p>
+                    </li>
+
+                </ul></div>
+                <script id="deal-history-tpl" type="text/html">
+                    <ul class="clearfix list-item6">
+                        {{each body as data i}}
+                        <li>
+                            <a href="{{data.item.url}}" class="img csgo-img-bg">
+                                <img src="{{data.item.image_url}}" width="154" height="104" alt="{{data.item.name}}">
+                                {{ if data.item.rarity_name }}
+                                <span class="rarity-box {{data.item.rarity}}">{{data.item.rarity_name}}</span>
+                                {{/if}}
+                            </a>
+                            <p class="name">
+                                <span class="pull-left name-ellipsis">{{data.user.nickname}}</span>
+                                <span class="num">{{data.time}}</span>
+                            </p>
+                            <p class="info">
+                                购买了 <span class="text-corrupted">{{data.item.name}}</span>
+                            </p>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </script>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <!--    帮助按钮-->
+        <div id="help-btn">
+            <a href="https://www.c5game.com/help.html"><span class="icon iconfont ft-18 right-2"></span> 新手帮助</a>
+        </div>
+        <!--    帮助按钮-->
+        <div id="foot-banner">
+            <div class="banner-nologin banner-sell" data-url="/api/sell/amount.html">
+                <div class="banner-bottom">
+                    <img src="https://static.c5game.com/images/banner-bottom-pic.png" alt="qop-big">
+                    <div class="login-form pull-right">
+
+                        <a href="https://www.c5game.com/user/login/ajax.html" class="login gotoLogin btn btn-yellow ajax-login" data-target="#remote-dailog-modal">登 录</a>
+                        <a href="https://www.c5game.com/user/register/ajax.html" class="reg gotoReg btn btn-blue mt-10 ajax-login" data-target="#remote-dailog-modal">注 册</a>
+                    </div>
+                    <button class="close" id="close-banner" style="position:absolute; margin-left: 7px;">×</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-hd">
+            <ul class="footer-links">
+                <li>
+                    <div class="title title1">新手上路</div>
+                    <div class="links">
+                        <a href="/help.html?tag=%E9%A5%B0%E5%93%81%E5%AD%98%E5%8F%96">饰品存取</a>
+                        <a href="/help.html?tag=%E6%96%B0%E6%89%8B%E4%B8%8A%E8%B7%AF">出售求购</a>
+                        <a href="/help.html">使用帮助</a>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="title title2">常见问题</div>
+                    <div class="links">
+                        <a href="/help.html?tag=%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">常见问题</a>
+                        <a href="/help.html?tag=STEAM%E5%90%AF%E7%94%A8">STEAM启用</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="title title3">支付方式</div>
+                    <div class="links">
+                        <a id="alipay" href="#"></a>
+                        <a id="wechat" href="#"></a>
+                        <a id="visa" href="#"></a>
+                        <a id="paypal" href="#"></a>
+                    </div>
+                </li>
+                <li class="last">
+                    <div class="title title4">腾讯在线客服</div>
+                    <div class="links qq-servers" data-url="/api/default/servers.html" data-tpl="qq-tpl">
+
+                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=387891351&amp;site=qq&amp;menu=yes">C5客服①
+
+                        </a>
+                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2685861828&amp;site=qq&amp;menu=yes">C5客服④
+
+                        </a>
+                    </div>
+                    <div class="links mt-50">
+                        <img src="https://static.c5game.com/images/bd.png">
+                    </div>
+                </li>
+            </ul>
+
+            <div class="friend-links mt-20">
+                <span class="pull-left">友情链接 : </span>
+                <p class="friend-links-content">
+                    <a href="http://www.dota2.com.cn/main.htm" target="_blank">DOTA2官网</a>
+                    <a href="http://www.csgo.com.cn/" target="_blank">CS:GO</a>
+                    <a href="http://www.alipay.com" target="_blank">支付宝</a>
+                    <a href="https://steamcommunity.com/" target="_blank">Steam</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bd">
+            <div class="footer-bd-content">
+                <div class="footer-bd-content-left"></div>
+                <div class="copyright">
+                    <p class="company">  </p>
+                    <p>Copyright©2016 c5game.com All rights reserved. 浙ICP备16013980号-2 经营性许可证:浙B2-20161004</p>
+                    <a style="color: #4e4f53" href="/help/default/about.html">关于我们</a>
+                    <a style="color: #4e4f53" href="/help/default/about.html">联系我们</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-
 <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
-<script src="./js/swiper-3.4.1.jquery.min.js"></script>
+<script src="js/swiper-3.4.1.jquery.min.js"></script>
 <script src="./js/index.js"></script>
 <script>
 
